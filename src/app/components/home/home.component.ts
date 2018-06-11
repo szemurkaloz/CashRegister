@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  ringWasPlaced(message: string) {
+    console.log(`Put your hands up: ${message}`);
+  }
+
 }

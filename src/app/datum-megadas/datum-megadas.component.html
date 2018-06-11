@@ -1,15 +1,20 @@
+<form #f="ngForm"
+(ngSubmit)="onSubmit(f.value)"
+class="ui form">
 <div class="flex-container">
   <div class="flex-container-2">
     <label for="dateofstarting">Kezdő dátum</label>
-    <input type="date" name="dateofstarting" id="dateofstarting">
+    <input type="date" name="dateofstarting" id="dateofstarting" ngModel>
   </div>
   <div class="flex-container-2">
     <label for="dateofending">Vége dátum</label>
-    <input type="date" name="dateofending" id="dateofending">
+    <input type="date" name="dateofending" id="dateofending" ngModel>
   </div>
   <div >
-    <button class="btn success" (click)="onClik()">Success</button>
+    <button class="btn success" type="submit">Lekérdez</button>
   </div>
+</div>>
+</form>
 
 <!--
   <form action="https://1stwebdesigner.us14.list-manage.com/subscribe/post" method="POST">

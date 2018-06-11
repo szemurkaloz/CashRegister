@@ -3,8 +3,7 @@
     {{ 'PAGES.HOME.TITLE' | translate }}
   </h1>
   <h4>Content Dátum</h4>
-  <app-datum-megadas class="title"></app-datum-megadas>
 </div>
 <div class="container">
-<app-datum-megadas class="title"></app-datum-megadas>
+<app-datum-megadas class="title" (putRingOnIt)="ringWasPlaced($event)"></app-datum-megadas>
 </div>
